@@ -1,0 +1,167 @@
+.icons {
+    word-spacing: 25px;
+}
+
+.navs {
+    text-decoration: none;
+    color: black;
+}
+
+.bgimg {
+    background-image: url(7197526.jpg);
+    width: 100%;
+    height: 530px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    align-items: center;
+    background-color: white;
+}
+
+.bgimgabt {
+    background-image: url('https://img.freepik.com/free-vector/car-sharing-concept-illustration_114360-14861.jpg');
+    margin-bottom: 30px;
+    width: 100%;
+    height: 530px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.abt {
+    margin-left: 15vh;
+    margin-right: 8vh;
+}
+
+.imgabt {
+    margin-left: 30vh;
+    width: 340px;
+    height: 270px;
+    border-radius: 10px;
+}
+
+.imgabt2 {
+    margin-left: 10vh;
+    width: 340px;
+    height: 270px;
+    border-radius: 10px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: green !important;
+}
+
+.nav-tabs {
+    border-bottom: none !important;
+}
+
+.bgimgtarrif {
+    background-image: url('https://img.freepik.com/free-photo/view-car-running-high-speed_23-2150635418.jpg?size=626&ext=jpg&ga=GA1.1.11406635.1692806813&semt=sph');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.loc {
+    font-size: 30px;
+    font-style: oblique;
+    background-color: aquamarine;
+    width: 25vh;
+    text-align: center;
+    padding: 3px;
+}
+
+.img-contact {
+    position: relative;
+    top: -15%;
+    left: 40%;
+    background-color: blue;
+    border-radius: 40px;
+    padding: 20px;
+    float: none;
+    display: flex;
+    box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.25);
+}
+
+.bglog {
+    background-image: url("https://img.freepik.com/free-photo/man-driving-car-from-rear-view_1359-494.jpg?size=626&ext=jpg&ga=GA1.2.11406635.1692806813&semt=ais");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.log {
+    background: transparent;
+    border: 2px solid #495057;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 10px 0px 10px #495057;
+}
+
+.loginput {
+    width: 50vh;
+    border-radius: 50px;
+    border: 0px;
+    height: 7vh;
+}
+
+.logicn {
+    color: cadetblue;
+    border: 2px solid gray;
+    width: 60px;
+    padding: 10px;
+    border-radius: 70px;
+}
+
+.carb {
+    border-top: 1px solid blue;
+}
+
+.signin1 {
+    text-decoration: none !important;
+    cursor: pointer;
+    word-spacing: 2px !important;
+    color: white;
+
+}
+
+.cardhover {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    /* padding: 16px 32px; */
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+
+}
+
+.cardhover:hover {
+    animation: transform 0.3s transform 0 2 ;
+   transform: rotateX('90');
+   background-color: aqua;
+    color: white;
+}
+.navs :active
+{
+    background-color: aqua;
+    color: red;
+}
+.navbar :active
+{
+    color: red;
+}

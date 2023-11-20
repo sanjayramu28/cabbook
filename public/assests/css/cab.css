@@ -1,0 +1,17 @@
+.btnbook
+{
+    float: right; 
+    border-radius: 15px;
+    padding: 7px;
+    width: 15vh;
+}
+.cardbg
+{
+    background-color: #f5f5dc    ;
+}
+.offer
+{
+    background-color: skyblue;
+    font-family: "Audiowide", sans-serif;
+    text-shadow: 3px 3px 3px #ababab;
+}

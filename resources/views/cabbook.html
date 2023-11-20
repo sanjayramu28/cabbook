@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cab Reservation Or Booking system</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/3799/3799798.png">
+    <link rel="stylesheet" href="../../public/assests/css/cabbook.css">
+<!-- <link rel="stylesheet" href="../../public/assests/css/cab.css"> -->
+    <link rel="icon"
+        href="https://cdn-user-icons.flaticon.com/116851/116851778/1694933370779.svg?token=exp=1694934288~hmac=c57675246c311010e227300424f0ffb5">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="bg-secondary row">
+            <div class="col-lg-6 icons text">
+                <div class="mt-2">
+                    &nbsp;<i class="fa-brands fa-facebook-f" style="color: white;"></i>
+                    <a href="https://www.instagram.com/sam_sanjay2000/"> <i class="fa-brands fa-instagram"
+                            style="color: white;"></i></a>
+                    <a href="https://www.instagram.com/sam_sanjay2000/"> <i class="fa-brands fa-twitter"
+                            style="color: white;"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-end icons text-white mt-2">
+                    <i class="fa-solid fa-phone fa-fade"></i><label>&nbsp;9087661022</label>
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                    <a href="cabbooklogin.html" class="signin"> <i class="fa-regular fa-user me-1"></i>Sign in</a>
+                </p>
+            </div>
+        </div>
+        <div class="row m-3 p-10 ">
+            <div class="col-lg-6">
+                <img src="https://cdn-icons-png.flaticon.com/128/1023/1023350.png" width="50px" height="40px">
+            </div>
+            <div class="col-lg-6">
+                <div class="navbar">
+                    <a href="cabbook.html" class="navs active">Home</a>
+                    <a href="cabbookabt.html" class="navs">About us</a>
+                    <a href="cabride.html " class="navs">Ride Facilities</a>
+                    <a href="cabtarrif.html" class="navs">Tarriff</a>
+                    <a href="cabcontact.html" class="navs">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="bgimg">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row align-items-center">
+                        <div class="col justify-content-center" style="position: relative; top: 30vh;">
+                            <h1 class="text-center text-info">Service safety with sophistication
+                                are our speciality.</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 p-2">
+                    <div class=" shadow-lg p-3 border">
+                        <ul class="nav1 nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                            <li class="nav-item w-50" role="presentation">
+                                <button class="nav-link active w-100" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">One-Way</button>
+                            </li>
+                            <li class="nav-item w-50" role="presentation">
+                                <button class="nav-link w-100" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">Two-Way</button>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                                <form id="one-way" action="cabpick.php" method="post">
+                                    <input type="tel" placeholder="Your Mobile Number" class="m-4 p-2"
+                                        style="width: 90%;" required id="phone" name="phone"><br>
+                                    <input type="text" placeholder="Enter Pickup Location" class="m-4 p-2"
+                                        style="width: 90%;" required id="pickloc" name="pickloc"><br>
+                                    <input type="text" placeholder="Drop A Location" class="m-4 p-2" style="width: 90%;"
+                                        required id="droploc" name="droploc">
+                                    <br>
+                                    <input type="datetime-local" placeholder="Time" class="m-4 p-2" style="width: 90%;"
+                                        required id="dates" name="dates">
+                                    <p class="text-center">
+                                        <input type="submit" value="Search Cabs"
+                                            class="btn btn-warning btn-rounded mt-4" style="border-radius: 20px;  ">
+                                    </p>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                <form id="two-way" action="cab2way.php" method="post">
+                                    <input type="text" placeholder="Enter Pickup Location" class="m-4 p-2"
+                                        style="width: 90%;" id="phone" name="phone"><br>
+                                    <input type="text" placeholder="Drop A Location" class="m-4 p-2" style="width: 90%;"
+                                        required id="dropLocation" name="dropLocation">
+                                    <br>
+                                    <p class="ms-4 mt-4">Enter a Start Date</p>
+                                    <input type="datetime-local" placeholder="Time" class="ms-4  p-2"
+                                        style="width: 90%;" required id="dates1" name="dates1">
+                                    <p class="ms-4 mt-4">Enter a End Date</p>
+                                    <input type="datetime-local" placeholder="Time" class="ms-4  p-2"
+                                        style="width: 90%;" id="dates2" name="dates2">
+                                    <p class="text-center">
+                                        <input type="submit" value="Search Cabs"
+                                            class="btn btn-warning btn-rounded mt-4" style="border-radius: 20px;  ">
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <h1 class="text-center mt-5">Why You Choose One Drop Taxi for Outstation Travel?</h1>
+            <p>Do you love travelling outstations often and exploring new places? Then One Drop Taxi in Trichy is your
+                best choice. Whenever you want to go and wherever you want to go, just think of us and get connected for
+                your
+                safe outstation travel. Whatever the purpose of your outstation travel is, whether it is with your
+                friends or family, you can book a taxi online with One Drop Taxi and we always make your trip a sweet
+                and memorable
+                one. Our outstation travel taxi includes the following:</p>
+            <p>The outstation travel taxi includes -</p>
+            <ul>
+                <li> Well-experienced and trained driver.</li>
+                <li>Fully sanitized cab.</li>
+                <li>Fully vacuumed and cleaned the cab</li>
+            </ul>
+            <p>With our easy online taxi booking service, you can select the cab of your choice and schedule the start
+                time
+                and reach the destination at your convenience. Our outstation cab booking services help you plan your
+                outstation travel hassle-free as you need not rush to start unlike boarding a train or bus.</p>
+        </div>
+        <div class="bg-light">
+            <div class="ms-5">
+                <p class="text-warning text-center ">OUR PROCESS</p>
+                <h1 class="text-center">How to book taxi online from us?</h1>
+                <p>With One Drop Taxi online taxi booking services you can save time and money. Whether you plan a
+                    one-way trip or round-trip, you can go ahead with doing outstation cab booking on our app to any place simply at the                    click of a button from your mobile phone within a few minutes.</p>
+                <div class="row mt-4">
+                    <div class="col-lg-4">
+                        <div class="justify-content-center">
+                            <p class="text-center">
+                                <img src="https://cdn-icons-png.flaticon.com/128/3205/3205621.png" class="img-fluid ">
+                            <h4 class="text-center ">Choose Cab</h4>
+                            <p class="text-center">At One Drop Taxi, we have a wide range of well-maintained vehicles.
+                                You
+                                can choose the desired
+                                vehicle from our outstation rental cab service based on your need and budget.</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="justify-content-center">
+                            <p class="text-center">
+                                <img src="https://cdn-icons-png.flaticon.com/128/535/535239.png" class="img-fluid ">
+                            <h4 class="text-center ">Pickup Date </h4>
+                            <p class="text-center">One Drop Taxi allows you to pre-book rides for a later date.So just
+                                decide on the start date and choose the pickup date in advance from our app for your
+                                outstation cab booking.</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="justify-content-center">
+                            <p class="text-center">
+                                <img src="https://cdn-icons-png.flaticon.com/128/12343/12343903.png" class="img-fluid ">
+                            <h4 class="text-center ">Where To Go</h4>
+                            <p class="text-center text-justify-center">One Drop Taxi offers the best cab operators and
+                                drivers for every prime
+                                location of Tamilnadu. So just choose your destination location in our app or website
+                                and
+                                have journey hassle-free.</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 ms-5">
+                <div class="col-lg-4">
+                    <div class="justify-content-center">
+                        <p class="text-center">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1761/1761422.png" class="img-fluid ">
+                        <h4 class="text-center ">Select Budget-Friendly Cab</h4>
+                        <p class="text-center">At One Drop Taxi, we have the right deals for you so that you choose the
+                            best
+                            budget-friendly cars from our online taxi booking service. Wherever you travel, make big
+                            savings
+                            with our outstation car rental service.</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="justify-content-center">
+                        <p class="text-center">
+                            <img src="https://cdn-icons-png.flaticon.com/128/2438/2438018.png" class="img-fluid ">
+                        <h4 class="text-center ">Book and Relax</h4>
+                        <p class="text-center">Our online taxi booking interface is user-friendly and will let you
+                            complete
+                            the
+                            outstation cab booking quickly in just a few clicks. You can sit back and relax while our
+                            drivers
+                            will come to pick you up on time, and you can be sure to reach your destination in optimal
+                            time.
+                        </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="justify-content-center">
+                        <p class="text-center">
+                            <img src="https://cdn-icons-png.flaticon.com/128/1320/1320521.png" class="img-fluid ">
+                        <h4 class="text-center ">Safe Journey</h4>
+                        <p class="text-center text-justify-center">Onedroptaxi Taxi has an advanced safety enabled
+                            technology
+                            that would make travelling much safer and secure.We always aim to deliver the best travel
+                            experience
+                            to our customers.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <h3 class="text-center">Best Price for Cab Booking at One Drop Taxi</h3>
+                <p class="mb-4">We all like to travel comfortably and economically at the same time when you book an
+                    outstation car
+                    rental service. With One Drop Taxi online taxi booking service, you can save money on travel and use
+                    it
+                    for other expenses on the trip. By choosing our outstation taxi booking, you get cheaper price
+                    options
+                    for all your travel. You can book all types of economy, SUV, and AC & Non-AC cabs online in One Drop
+                    Taxi at the best deals and offers. We offer all means of intercity, local, and airport cabs at super
+                    affordable fares compared to other online taxi booking services.</p>
+                <h3 class="mt-4 text-center">Experience the convenient way to pay for drop taxi booking service</h3>
+                <p>Be assured, when you choose One Drop Taxi for your online taxi booking, the services offered are at
+                    the
+                    most reasonable rates. Besides that, we also maintain 100% billing transparency. So, there are zero
+                    hidden charges involved from the start to end of your journey. We offer a wide range of payment
+                    options
+                    at the convenience of the customers to make their travel hassle-free. On selection of a car of your
+                    choice, you can avail any of the following payment methods like prepaid, partially paid or
+                    post-paid.
+                    You can also make payments through a Credit Card, Debit Card, Online wallets, UPI, Google Pay,
+                    mobile
+                    payments, Net banking, International Cards and much more.</p>
+            </div>
+            <div class="container mt-5">
+                <h3 class="text-center">Why are we the best one way drop taxi service providers in Trichy?</h3>
+                <p class="text"> One Drop Taxi turns you into an expert in planning road trips. You can get all types of
+                    cab
+                    services with
+                    us and plan your travel accurately. Therefore, online taxi booking with One drop taxi is always a
+                    hassle-free experience. Whether it is a local trip or outstation trip or an airport taxi, we can
+                    meet
+                    all your travel requirements so that you can reach your desired destination on time. Gone are the
+                    days
+                    when you pay for both sides even if you need a one-way drop taxi. To travel from one city to
+                    another, we
+                    offer you the convenience of booking one-way cabs for our customers. One-way drop taxi is always
+                    very
+                    affordable to customers while they enjoy the same comfort of a round trip travel. You can totally
+                    rely
+                    on our services because we make our customers feel safe and secure wherever they travel with us. We
+                    have
+                    highly trained and professional drivers who follow all the safety measures and are well-equipped to
+                    take
+                    you to your destination on time quickly. Our cabs are well maintained and always in perfect
+                    condition
+                    and you can enjoy the ride however rough the road is. Our expert team is there to assist you and
+                    give
+                    you the best travel solutions for all your queries. Our customer service centre is at your reach
+                    anytime
+                    24X7 to resolve your queries.</p>
+            </div>
+            <h2 class="text-center">Top Reviews</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 ">
+                        <div style="background-color: white; box-sizing: content-box;" class="shadow-lg" id="star">
+                            <div class="m-4 p-2">
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <h3 class="mt-4">Sanjay</h3>
+                                <h4 class="mt-4">Best Travel Experience</h4>
+                                <p class="mt-4">We hired the taxi services from One-drop taxi for a week during our
+                                    recent
+                                    Chennai trip.
+                                    <br>The
+                                    vehicle provided was a good one and our driver was very polite and a reliable
+                                    person.
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div style="background-color: white;  box-sizing: border-box;" id="star">
+                            <div class="m-4 p-2">
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <h3 class="mt-4">Balaji</h3>
+                                <h4 class="mt-4">Price Worth For Ride</h4>
+                                <p class="mt-4">Booked a cab at One-drop taxi from Chennai airport to Trichy. Really had
+                                    a
+                                    hassle-free
+                                    booking, cheap fare at a very affordable price. Had a safe and comfortable journey.
+                                    One
+                                    drop taxi provides the best outstation taxi service ever.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div style="background-color: white; box-sizing: border-box;" class="shadow-lg" id="star">
+                            <div class="m-4 p-2">
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <h3 class="mt-4">Vijay</h3>
+                                <h4 class="mt-4">Professional service</h4>
+                                <p class="mt-4">Very good trip and services by one drop taxi. The car and driver
+                                    assigned
+                                    were very good.
+                                    The driver was punctual with good driving skill. Got many quotes from many travel
+                                    agencies but one drop gave me the best price
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-transparent mt-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <h2 class="text-center">Onedroptaxi <span style="color: gold;"><i>from the App</i> </span> </h2>
+                        <p class="mt-2 ms-5 fs-3">Download the app for driver / Enter Your Mobile Number. We'll send you
+                            the
+                            link of our app</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="#">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/104/104122.png" height="50px">
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <a href="#">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/11389/11389520.png" height="50px">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://www.onedroptaxi.com/assets/images/booking.png" style="float: right;" width="385px"
+                        height="325px" class="me-5">
+                </div>
+            </div>
+        </div>
+        <div style="background-color: #3feee6;" class="mt-5">
+            <h4 class="text-center p-4">Popular Routes</h4>
+            <div class="row justify-content-center font-effect-emboss" style="color: black; padding-bottom: 30px;">
+                <div class="col-lg-3 ms-5">
+                    <p class=" loc">Chennai</p>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Chennai to
+                        Coimbatore
+                    </label><br>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Chennai to Madurai
+                    </label><br>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Chennai to Trichy
+                    </label><br>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Chennai to Bangalore
+                    </label>
+                </div>
+                <div class="col-lg-3 ">
+                    <p class=" loc">Tiruchy</p>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Tiruchy to
+                        Coimbatore
+                    </label><br>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Tiruchy to Madurai
+                    </label><br>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Tiruchy to Chennai
+                    </label><br>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Tiruchy to Bangalore
+                    </label>
+                </div>
+                <div class="col-lg-3 ">
+                    <p class=" loc">Madurai</p>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Madurai to
+                        Coimbatore
+                    </label><br>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Madurai to Theni
+                    </label><br>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Madurai to Chennai
+                    </label><br>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Madurai to Namakkal
+                    </label>
+                </div>
+                <div class="col-lg-2 ">
+                    <p class=" loc">Coimbatore</p>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Coimbatore to
+                        Bangalore
+                    </label><br>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Coimbatore to Theni
+                    </label><br>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Coimbatore to Karur
+                    </label><br>
+                    <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Coimbatore to
+                        Vellore
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/27186d12e4.js" crossorigin="anonymous"></script>
+    <script src="../../public/assests/js/cabbook.js"></script>
+</body>
+
+</html>

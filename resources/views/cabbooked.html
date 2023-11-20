@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cab Booking information</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/3799/3799798.png">
+    <link rel="stylesheet" href="../../public/assests/css/cabbook.css">
+    <link rel="stylesheet" href="../../public/assests/css/cab.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="icon"
+        href="https://cdn-user-icons.flaticon.com/116851/116851778/1694933370779.svg?token=exp=1694934288~hmac=c57675246c311010e227300424f0ffb5">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="bg-secondary row">
+            <div class="col-lg-6 icons text">
+                <div class="mt-2">
+                    &nbsp;
+                    <a href="https://www.facebook.com/onedroptaxi12"><i class="fa-brands fa-facebook-f" style="color: white;"></i></a>
+                   <a href="https://www.instagram.com/sam_sanjay2000/"> <i class="fa-brands fa-instagram" style="color: white;"></i></a>
+                   <a href="https://www.instagram.com/sam_sanjay2000/"> <i class="fa-brands fa-twitter" style="color: white;"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-end icons text-white mt-2">
+                    <i class="fa-solid fa-phone fa-fade"></i><label>&nbsp;9087661022</label>
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                    <a href="cabbooklogin.html" class="signin"> <i class="fa-regular fa-user me-1"></i>Sign in</a>
+                </p>
+            </div>
+        </div>
+        <div class="row m-3 p-10 ">
+            <div class="col-lg-6">
+                <img src="https://cdn-icons-png.flaticon.com/128/1023/1023350.png" width="60px" height="50px">
+            </div>
+            <div class="col-lg-6 ">
+                <div class="navbar">
+                    <a href="cabbook.html" class="navs">Home</a>
+                    <a href="cabbookabt.html" class="navs">About us</a>
+                    <a href="cabride.html" class="navs">Ride Facilities</a>
+                    <a href="cabtarrif.html" class="navs">Tarriff</a>
+                    <a href="cabcontact.html" class="navs">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card shadow-lg" style="border-radius: 20px;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="ms-2">Booking Summary</h2>
+                    <table style="width: 100%; border: 3px !important;" class="table table-bordered ms-2">
+                        <tr>
+                            <th>
+                                Journey Type
+                            </th>
+                            <th>
+                                One-Way
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Cab Type:</p>
+                            </td>
+                            <td>
+                                <p>Indica / Vista / Ritz / Swift or Similar</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                From:
+                            </td>
+                            <td>
+                                <label id="fro"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                To:
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Fare:
+                            </td>
+                            <td>
+                                2150
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Tax(%):
+                            </td>
+                            <td>
+                                105
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Distance:
+                            </td>
+                            <td>
+                                130Kms
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mt-2">Cab Booking</h3>
+                    <div class="container">
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <p>Name:</p>
+                                    <input type="text" placeholder="Enter Your Name" required style="width: 100%;">
+                                    <p>Mobile:</p>
+                                    <input type="tel" placeholder="Enter Your Mobile Number" required style="width: 100%;">
+                                    <p>Pickup Time:</p>
+                                    <input type="datetime-local" placeholder="Enter Pickup Date and Time" required style="width: 100%;">
+                                </div>
+                                <div class="col-lg-6">
+                                    <p>Email:</p>
+                                    <input type="email" placeholder="Enter Your Email" required style="width: 100%;">
+                                    <p>Pickup Address</p>
+                                    <input type="text" placeholder="Enter Your Address" required style="width: 100%;">
+                                    <p>Coupon:</p>
+                                    <input type="text" placeholder="Enter Your Coupon" required style="width: 100%;">
+                                </div>
+                            </div>                
+                        <p class="mt-5">Choose Payment Method</p>                     
+                            <input type="radio" id="Pay To Driver" name="fav_language" value="HTML" required>
+                            <label for="Pay To Driver">Pay To Driver</label><br>
+                            <input type="radio" id="Pay 15% Advance" name="fav_language" value="Pay 15% Advance" required >
+                            <label for="Pay 15% Advance">Pay 15% Advance</label><br>
+                            <input type="radio" id="Pay Full payment" name="fav_language" value="Pay Full payment" required>
+                            <label for="Pay Full payment">Pay Full payment</label>
+                            <br>
+                             <input type="submit" value="Confirm Booking" class="btn btn-primary mt-4"><br>
+                            <input type="checkbox">
+                            <label>I understand and agree with the Terms of Service and Cancellation</label>
+                        </form>
+                        <ul class="mt-4">
+                            <li>
+                                No Driver Batta
+                            </li>
+                            <li>
+                                Excluding - Hills, Tollgate, Permit Charges Applicable
+                            </li>
+                        </ul>
+                        <p>
+                            Please Check the terms and condition: Our customer representative will check the vehicle
+                            availability and contact you for current (Today/Tomorrow). For advance booking driver
+                            details
+                            will share one day before your travel date Thank You For Choosing Taximo For any futher
+                            queries
+                            check our website: Taximo tariff
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+    <div class="text-white offer">
+        <div class="mt-5 text-center  fs-2">
+            Offers
+        </div>
+        <p class="fs-5 text-center">Enjoy Different Deals Each Day By Booking Your Cabs With OneDrop Taxi.
+            
+        </p>
+        <div class="row justify-content-around">
+            <div class="col-md-2 mt-1">
+                <img src="https://www.onedroptaxi.com/assets/img/offers/offer-1.jpg"
+                    style="border-radius: 30px; width: 300px; height: 410px;">
+                <p style="width: 220px; text-align: center;">Get 10% off on Outstation Taxi</p>
+            </div>
+            <div class="col-md-2 align-items-center justify-content-center mt-1 p-3 mt-5">
+                <img src="https://www.onedroptaxi.com/assets/img/offers/offer-2.jpg"
+                    style="border-radius: 30px; width: 277px; height: 410px;">
+                <p style="width: 220px; text-align: center;">Airport Discount</p>
+            </div>
+            <div class="col-md-2 align-items-center justify-content-center mt-1 p-3">
+                <img src="https://img.freepik.com/free-photo/side-view-hands-holding-smartphone_23-2149764150.jpg?size=626&ext=jpg&ga=GA1.2.11406635.1692806813&semt=ais"
+                    style="border-radius: 30px; width: 277px; height: 410px;">
+                <p style="width: 220px; text-align: center;">Get 10% off on Outstation Taxi</p>
+            </div>
+            <div class="col-md-2 align-items-center justify-content-center me-5  mt-5 p-3">
+                <img src="https://img.freepik.com/free-photo/yellow-black-sign-taxi-placed-top-car-night_181624-10624.jpg?size=626&ext=jpg&ga=GA1.1.11406635.1692806813&semt=sph"
+                    style="border-radius: 30px; width: 277px; height: 410px;">
+                <p style="width: 220px; text-align: center;">Chennai To Tiruchy</p>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center mt-3">Trip Types</h1>
+    <div class="m-3 card " style="background-color: aquamarine;">
+        <div class="row m-3 justify-content-around">
+            <div class="col-md-2">
+                <p class="text-center p-3  ">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2898/2898588.png">
+                </p>
+                <p class="font-effect-outline fs-3 text-center">Outstation Taxi</p>
+            </div>
+            <div class="col-md-2">
+                <p class="text-center p-3" style="background-color: aquamarine; font-size: 60px;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/11587/11587156.png">
+                </p>
+                <p class="font-effect-outline fs-3 text-center">RoundTrip cabs</p>
+            </div>
+            <div class="col-md-2">
+                <p class="text-center p-3" style="background-color: aquamarine; font-size: 60px;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/11424/11424079.png">
+                </p>
+                <p class="font-effect-outline fs-3 text-center">Local Rental</p>
+            </div>
+            <div class="col-md-2">
+                <p class="text-center p-3" style="background-color: aquamarine; font-size: 60px;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3357/3357808.png">
+                </p>
+                <p class="font-effect-outline fs-3 text-center">One Way Cabs</p>
+            </div>
+            <div class="col-md-2">
+                <p class="text-center p-3 " style="background-color: aquamarine; font-size: 60px;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3994/3994939.png">
+                </p>
+                <p class="font-effect-outline fs-3 text-center">Airport Pickup</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4 bg-light">
+        <h1 class="text-center">How to book online taxi from Us!!</h1>
+        <p class="text-center m-3 ">With One Drop Taxi online taxi booking services you can save time and money. Whether
+            you
+            plan a one-way trip or round-trip, you can go ahead with doing outstation cab booking on our app to any
+            place simply at the click of a button from your mobile phone within a few minutes.</p>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <label class="row justify-content-center">
+                        <div class="col-lg-3">
+                            <div class="card" style="height: 30vh;">
+                                <div class="carb">
+                                    <p class="text-center m-3 ">Choose Cab</p>
+                                    <p class="text-center m-3 ">At one drop taxi we have wide range of well maintained vehicles</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="card" style="height: 30vh;">
+                                <div class="carb">
+                                    <p class="text-center m-3 ">Where to go</p>
+                                    <p class="text-center m-3 ">One Drop Taxi offers the best cab operators and drivers for every
+                                        prime location of Tamilnadu. So just choose your destination location in our app
+                                        or website and have journey hassle-free.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="card" style="height: 30vh;">
+                                <div class="carb">
+                                    <p class="text-center m-3 ">Book and Relax</p>
+                                    <p class="text-center m-2 mt-1 fs-6">Our online taxi booking interface is user- friendly and will let you
+                                        complete the outstation cab booking quickly in just a few clicks. You can sit
+                                        back and relax while our drivers will come to pick you up on time, and you can
+                                        be sure to reach your destination in optimal time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div class="carousel-item">
+                    <label class="row justify-content-center">
+                        <div class="col-lg-3">
+                            <div class="card" style="height: 30vh;">
+                                <div class="carb">
+                                    <p class="text-center m-3">Safe Journey</p>
+                                    <p class="text-center m-3">Onedroptaxi Taxi has an advanced safety enabled
+                                        technology that would make travelling much safer and secure. We always aim to
+                                        deliver the best travel experience to our customers.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="card" style="height: 30vh;">
+                                <div class="carb ">
+                                    <p class="text-center m-3">Pickup Date</p>
+                                    <p class="text-center m-3">One Drop Taxi allows you to pre-book rides for a later
+                                        date.So just
+                                        decide on the start date and choose the pickup date in advance from our app for
+                                        your outstation cab booking.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="card " style="height: 30vh;">
+                                <div class="carb">
+                                    <p class="text-center m-3">Select Budget-Friendly Cab</p>
+                                    <p class="text-center m-3">At One Drop Taxi, we have the right deals for you so that
+                                        you choose
+                                        the best budget- friendly cars from our online taxi booking service. Wherever
+                                        you travel, make big savings with our outstation car rental service.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    </div>
+    <div style="background-color: #3feee6;" class="mt-5">
+        <h4 class="text-center p-4">Popular Routes</h4>
+        <div class="row justify-content-center font-effect-emboss" style="color: black; padding-bottom: 30px;">
+            <div class="col-lg-3 ms-5">
+                <p class=" loc">Chennai</p>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Chennai to
+                    Coimbatore
+                </label><br>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Chennai to Madurai
+                </label><br>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Chennai to Trichy
+                </label><br>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Chennai to Bangalore
+                </label>
+            </div>
+            <div class="col-lg-3 ">
+                <p class=" loc">Tiruchy</p>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Tiruchy to
+                    Coimbatore
+                </label><br>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Tiruchy to Madurai
+                </label><br>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Tiruchy to Chennai
+                </label><br>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Tiruchy to Bangalore
+                </label>
+            </div>
+            <div class="col-lg-3 ">
+                <p class=" loc">Madurai</p>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Madurai to
+                    Coimbatore
+                </label><br>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Madurai to Theni
+                </label><br>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Madurai to Chennai
+                </label><br>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Madurai to Namakkal
+                </label>
+            </div>
+            <div class="col-lg-2 ">
+                <p class=" loc">Coimbatore</p>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Coimbatore to
+                    Bangalore
+                </label><br>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Coimbatore to Theni
+                </label><br>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Coimbatore to Karur
+                </label><br>
+                <i class="fa-solid fa-angles-right fa-fade" style="color: #f0f4f9;"></i> <label>Coimbatore to
+                    Vellore
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/27186d12e4.js" crossorigin="anonymous"></script>
+    <script src="cabbook.js"></script>
+</body>
+
+</html>
